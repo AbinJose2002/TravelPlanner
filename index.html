@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/index-style.css">
+    <title>xyc Travel</title>
+    <script type="text/javascript">
+        function pageLoad(){
+            const select = document.getElementById('place-search');
+            var value = select.options[select.selectedIndex].value;
+            if(value=='way'){
+                // ener url to wayanad page
+                window.location = "./wayanad/index.html"
+            }else if(value=='mun'){
+                // ener url to munnar page
+                window.location = "./munnar/index.html"
+            }else if(value=='ernk'){
+                // ener url to ernakulam page
+                window.location = "./alappuzha/index.html"
+            }else{
+                alert("Please enter a place");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div name="home" class="nav">
+            <div class="nav-dummy">
+                <!-- insert a ny image as logo -->
+                <img src="./assets/travel-guide-icon-map-ticket-travel-icon-17.png" height="70px" alt="" class="logo"> 
+            </div>
+            <nav class="top-nav">
+                <ul class="nav-list">
+                    <a href="login.html" class="login-link"><li>Login/Register</li></a>
+                    <a href="#contact"><li>Contact Us</li></a>
+                    <a href="#review"><li>Reviews</li></a>
+                    <a href="#place"><li>Places</li></a>
+                    <a href="#home"><li>Home</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <div class="banner-search">
+                <h1 class="main-heading">We've got your travel plans.
+                </h1><br><br>
+                <select name="" id="place-search" class="place-search">
+                    <option class="dest" value="">Enter a destination</option>
+                    <a href="#"><option class="dest" value="way">Wayanad</option></a>
+                    <option class="dest" value="mun">Munnar</option>
+                    <option class="dest" value="ernk">Alappuzha</option>
+                </select><br>
+                <input class="search-sub" type="submit" onclick="pageLoad()" value="Browse">
+            </div>
+        </div>
+
+        <div class="place-review">
+            
+            <!-- """""""""""""""""""""place section""""""""""""""""""""" -->
+            
+            <div class="places">
+                <h1 class="place-heading"><a name="place">Places</a></h1><br><br><br>
+                <div class="place-cards">
+                    <div class="div1">
+                        <h3 class="munnar-heading">Munnar</h3>
+                        <a href="./munnar/index.html"><button class="btn" type="submit">Browse</button></a>
+                    </div>
+                    <div class="div2">
+                        <h3 class="munnar-heading">Wayanad</h3>
+                        <a href="./wayanad/index.html"><button class="btn" type="submit">Browse</button></a>
+                    </div>
+                    <div class="div3">
+                        <h3 class="munnar-heading">Alappuzha</h3>
+                        <a href="./alappuzha/index.html"><button class="btn" type="submit">Browse</button></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- """""""""""""""""""""review section""""""""""""""""""""" -->
+    
+            <div class="review">
+                <h1 class="review-heading"><a name="review">Reviews</a></h1><br><br><br>
+                <br><br><br><div class="figure-sec">
+                    <figure class="snip1533">
+                        <figcaption>
+                          <blockquote>
+                            <p>Amazing trip with lots of memories and rejuvenating ambience</p><br>
+                          </blockquote>
+                          <h3>Leo Sebastian</h3>
+                          <h4>Sports Person</h4>
+                        </figcaption>
+                      </figure>
+                      <figure class="snip1533">
+                        <figcaption>
+                          <blockquote>
+                            <p>Great experience. Meticulously planned</p><br><br>
+                          </blockquote>
+                          <h3>Hari Pramod</h3>
+                          <h4>Traveller</h4>
+                        </figcaption>
+                      </figure>
+                      <figure class="snip1533">
+                        <figcaption>
+                          <blockquote>
+                            <p>The best trip ever.... wonderfull places and excellents hotel. The Driver Freddy, trustworthy and in good mood</p>
+                          </blockquote>
+                          <h3>Jubin Joy</h3>
+                          <h4>IT Professional</h4>
+                        </figcaption>
+                      </figure>
+                      <figure class="snip1533">
+                        <figcaption>
+                          <blockquote>
+                            <p>The hotel experience was awesome. The crew of the Alleppey private boat showed great hospitality.</p>
+                          </blockquote>
+                          <h3>Albin Reji</h3>
+                          <h4>Singer</h4>
+                        </figcaption>
+                      </figure>
+                </div>
+            </div>
+
+<!-- """""""""""""""""""footer begin""""""""""""""""""" -->
+
+  <div class="footer">
+    <div class="details">
+        <a name="contact"><h2 class="pages-head">Contact Us</h2></a>
+        <h4>Aj Travels</h4>
+        <p>AJ Travels is an outdoor recreational center which celebrates nature and it's inexplicable beauty<br>
+            +91 8547064686<br>mailme@ajtravels.com</p>
+    </div>
+    <div class="pages">
+        <h2 class="pages-head">Pages</h2>
+        <ul class="pages-list">
+           <a href=""><li>Home</li></a>
+           <a href=""><li>Places</li></a>
+           <a href=""><li>Reviews</li></a>
+           <a href=""><li>Contact Us</li></a>
+           <a href=""><li>Login/Register</li></a>
+        </ul>
+    </div>
+    <div class="social">
+        <h2 class="pages-head">Social Media</h2>
+        <div class="platforms">
+            <a href="https://www.instagram.com/"><img src="./assets/instagram.svg" alt="" width="20px"></a>
+            <a href="https://www.facebook.com/"><img src="./assets/facebook.svg" alt="" width="20px"></a>
+            <a href="https://www.youtube.com/"><img src="./assets/youtube.svg" alt="" width="20px"></a>
+        </div>
+        <h2 class="pages-head">Newsletter</h2>
+        <h4 class="newsletter">Stay updated to all the happenings here.</h4>
+        <form class="newsletter-form" action="" method="post">
+            <input type="mail" placeholder="Enter email address"><input class="email-submit" type="submit" value="submit">
+        </form>
+    </div>
+  </div>
+
+<!-- """""""""""""""""""footer end""""""""""""""""""" -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
