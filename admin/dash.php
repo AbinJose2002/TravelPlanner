@@ -20,7 +20,7 @@ $img = $row['profile'];
                 <h1 class="greet">Hi <?php echo $row['fname'];?></h1>
             </div>
             <div class="dash-profile">
-                <a href="">Profile</a><a href="">Logout</a>
+                <a href="">Profile</a><a href="../login_reg/login.php">Logout</a>
             </div>
         </div>
     </div>
