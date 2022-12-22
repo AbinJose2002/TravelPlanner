@@ -92,7 +92,7 @@ a{
 
 .home-name{
     margin: auto;
-    color: #fff;
+    color: rgb(56, 138, 74);
     font-family: serif;
     font-size: 3em;
 }
@@ -224,7 +224,7 @@ a{
 }
 
 .hotel1-img{
-    background-image: url("../assets/munnarhotel1.webp");
+    background-image: url("../assets/hotel1.webp");
     background-size: 100% 100%;
 }
 
@@ -259,7 +259,7 @@ a{
 }
 
 .hotel2-img{
-    background-image: url("../assets/munnarhotel2.webp");
+    background-image: url("../assets/hotel2.webp");
     background-size: 100% 100%;
 }
 

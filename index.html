@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/index-style.css">
     <title>xyc Travel</title>
     <script type="text/javascript">
@@ -15,7 +16,7 @@
                 window.location = "./munnar/index.html"
             }else if(value=='ernk'){
                 // ener url to ernakulam page
-                window.location = "./alappuzha/index.html"
+                window.location = "./alapuzha/index.html"
             }else{
                 alert("Please enter a place");
             }
@@ -31,11 +32,11 @@
             </div>
             <nav class="top-nav">
                 <ul class="nav-list">
-                    <a href="login.html" class="login-link"><li>Login/Register</li></a>
-                    <a href="#contact"><li>Contact Us</li></a>
-                    <a href="#review"><li>Reviews</li></a>
-                    <a href="#place"><li>Places</li></a>
-                    <a href="#home"><li>Home</li></a>
+                    <a href="./login_reg/login.php" class="login-link"><li>Login/Register</li></a>
+                    <a href="#contact" class="hvr-underline-from-center"><li>Contact Us</li></a>
+                    <a href="#review" class="hvr-underline-from-center"><li>Reviews</li></a>
+                    <a href="#place" class="hvr-underline-from-center"><li>Places</li></a>
+                    <a href="#home" class="hvr-underline-from-center"><li>Home</li></a>
                 </ul>
             </nav>
         </div>
@@ -44,7 +45,7 @@
                 <h1 class="main-heading">We've got your travel plans.
                 </h1><br><br>
                 <select name="" id="place-search" class="place-search">
-                    <option class="dest" value="">Enter a destination</option>
+                    <option class="dest" value="">Select your destination</option>
                     <a href="#"><option class="dest" value="way">Wayanad</option></a>
                     <option class="dest" value="mun">Munnar</option>
                     <option class="dest" value="ernk">Alappuzha</option>
@@ -57,20 +58,20 @@
             
             <!-- """""""""""""""""""""place section""""""""""""""""""""" -->
             
-            <div class="places">
-                <h1 class="place-heading"><a name="place">Places</a></h1><br><br><br>
+            <div data-aos="zoom-in" class="places"><br>
+                <h1 class="place-heading"><a name="place">Places</a></h1>
                 <div class="place-cards">
                     <div class="div1">
-                        <h3 class="munnar-heading">Munnar</h3>
-                        <a href="./munnar/index.html"><button class="btn" type="submit">Browse</button></a>
+                        <h3 class="munnar-heading">Munnar</h3><br>
+                        <a href="./munnar/index.html" class="button hvr-rectangle-in">Browse</a>
                     </div>
                     <div class="div2">
-                        <h3 class="munnar-heading">Wayanad</h3>
-                        <a href="./wayanad/index.html"><button class="btn" type="submit">Browse</button></a>
+                        <h3 class="munnar-heading">Wayanad</h3><br>
+                        <a href="./wayanad/index.html" class="button hvr-rectangle-in">Browse</a>
                     </div>
                     <div class="div3">
-                        <h3 class="munnar-heading">Alappuzha</h3>
-                        <a href="./alappuzha/index.html"><button class="btn" type="submit">Browse</button></a>
+                        <h3 class="munnar-heading">Alappuzha</h3><br>
+                        <a href="./alapuzha/index.html" class="button hvr-rectangle-in">Browse</a>
                     </div>
                 </div>
             </div>
@@ -78,50 +79,50 @@
             <!-- """""""""""""""""""""review section""""""""""""""""""""" -->
     
             <div class="review">
-                <h1 class="review-heading"><a name="review">Reviews</a></h1><br><br><br>
+                <h1 data-aos="fade-up" class="review-heading"><a name="review">Reviews</a></h1><br><br><br>
                 <br><br><br><div class="figure-sec">
-                    <figure class="snip1533">
+                    <figure data-aos="fade-up-right" class="snip1533">
                         <figcaption>
-                          <blockquote>
-                            <p>Amazing trip with lots of memories and rejuvenating ambience</p><br>
-                          </blockquote>
-                          <h3>Leo Sebastian</h3>
-                          <h4>Sports Person</h4>
+                            <blockquote>
+                                <p>Amazing trip with lots of memories and rejuvenating ambience</p><br>
+                            </blockquote>
+                            <h3>Leo Sebastian</h3>
+                            <h4>Sports Person</h4>
                         </figcaption>
-                      </figure>
-                      <figure class="snip1533">
+                        </figure>
+                        <figure data-aos="fade-up-right" class="snip1533">
                         <figcaption>
-                          <blockquote>
+                            <blockquote>
                             <p>Great experience. Meticulously planned</p><br><br>
-                          </blockquote>
-                          <h3>Hari Pramod</h3>
-                          <h4>Traveller</h4>
+                            </blockquote>
+                            <h3>Hari Pramod</h3>
+                            <h4>Traveller</h4>
                         </figcaption>
-                      </figure>
-                      <figure class="snip1533">
+                        </figure>
+                        <figure data-aos="fade-up-left" class="snip1533">
                         <figcaption>
-                          <blockquote>
+                            <blockquote>
                             <p>The best trip ever.... wonderfull places and excellents hotel. The Driver Freddy, trustworthy and in good mood</p>
-                          </blockquote>
-                          <h3>Jubin Joy</h3>
-                          <h4>IT Professional</h4>
+                            </blockquote>
+                            <h3>Jubin Joy</h3>
+                            <h4>IT Professional</h4>
                         </figcaption>
-                      </figure>
-                      <figure class="snip1533">
+                        </figure>
+                        <figure data-aos="fade-up-left" class="snip1533">
                         <figcaption>
-                          <blockquote>
+                            <blockquote>
                             <p>The hotel experience was awesome. The crew of the Alleppey private boat showed great hospitality.</p>
-                          </blockquote>
-                          <h3>Albin Reji</h3>
-                          <h4>Singer</h4>
+                            </blockquote>
+                            <h3>Albin Reji</h3>
+                            <h4>Singer</h4>
                         </figcaption>
-                      </figure>
+                        </figure>
                 </div>
             </div>
 
 <!-- """""""""""""""""""footer begin""""""""""""""""""" -->
 
-  <div class="footer">
+    <div class="footer">
     <div class="details">
         <a name="contact"><h2 class="pages-head">Contact Us</h2></a>
         <h4>Aj Travels</h4>
@@ -131,11 +132,11 @@
     <div class="pages">
         <h2 class="pages-head">Pages</h2>
         <ul class="pages-list">
-           <a href=""><li>Home</li></a>
-           <a href=""><li>Places</li></a>
-           <a href=""><li>Reviews</li></a>
-           <a href=""><li>Contact Us</li></a>
-           <a href=""><li>Login/Register</li></a>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="#place"><li>Places</li></a>
+            <a href="#review"><li>Reviews</li></a>
+            <a href="#contact"><li>Contact Us</li></a>
+            <a href="./login.html"><li>Login/Register</li></a>
         </ul>
     </div>
     <div class="social">
@@ -151,11 +152,18 @@
             <input type="mail" placeholder="Enter email address"><input class="email-submit" type="submit" value="submit">
         </form>
     </div>
-  </div>
+    </div>
 
 <!-- """""""""""""""""""footer end""""""""""""""""""" -->
             </div>
         </div>
     </div>
+
+    <!-- """""""""""""""""""Script""""""""""""""""""" -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
